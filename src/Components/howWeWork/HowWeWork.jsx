@@ -7,8 +7,8 @@ const HowWeWork = () => {
         <div className="flex justify-center mt-8">
             <h1 className='font-raleway text-4xl font-bold uppercase flex gap-1'>Bagaimana Kita Bekerja <span className='font-poppins text-sm'>(3)</span></h1>
         </div>  
-        <div>
-            <div className='mt-4 w-full min-h-[100vh] grid grid-cols-1 gap-4'>
+        <div className="flex flex-col xl:gap-20">
+            <div className='mt-4 w-full min-h-[100vh] grid grid-cols-1 md:grid-cols-2 gap-4 xl:order-2'>
                 {
                     workProcess.map((w, i) => {
                         return(
@@ -31,9 +31,9 @@ const HowWeWork = () => {
                 }
             
             </div>
-            <div className='mt-8 text-2xl font-poppins'>
+            <div className='mt-8 text-2xl font-poppins xl:text-4xl'>
                 <div className=''>
-                    <p className='flex items-center gap-2 flex-wrap '>
+                    <p className='flex items-center gap-2 flex-wrap xl:justify-center'>
                        <span className='flex gap-2'>
                             <span>Kami memanfaatkan</span>
                             <span className='block'>
@@ -76,7 +76,7 @@ const HowWeWork = () => {
                             <span>bisnis anda secara efektif.</span>
                        </span>
                     </p>
-                    <div className='mt-8 text-xl'>
+                    <div className='mt-8 text-xl xl:flex justify-center'>
                         <button className='px-6 py-2 bg-black/90 text-white  rounded-[20px]'>Lihat Produk</button>
                     </div>
                 </div>

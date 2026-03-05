@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         cz-shortcut-listen="true"
-        className={`${poppins.variable} ${raleway.variable} overflow-x-hidden antialiased`}
+        className={`${poppins.variable} ${raleway.variable} overflow-x-hidden antialiased xl:w-[100vw]`}
       >
         {children}
       </body>

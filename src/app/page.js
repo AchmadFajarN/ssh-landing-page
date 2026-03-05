@@ -5,6 +5,8 @@ import About from "@/Components/about/About";
 import SelectedWork from "@/Components/selectedWork/SelectedWork";
 import HowWeWork from "@/Components/howWeWork/HowWeWork";
 import Product from "@/Components/product/Product";
+import Contact from "@/Components/contact/Contact";
+import Footer from "@/Components/Footer";
 import { useEffect } from "react";
 export default function Home() {
   useEffect(() => {
@@ -26,6 +28,7 @@ export default function Home() {
         <Product />
       </div>    
     </main>
+    <Footer />
     </>
   );
 }

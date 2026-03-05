@@ -3,13 +3,13 @@ export const selectedWork = [
         name: 'Sipekad STTPU',
         description: 'Sistem informasi akademik yang mengurangi beban admin hingga 60%. Integrasi data mahasiswa, dosen, dan nilai dalam satu platform terpusat.',
         tools: ['expressJs', 'reactJs', 'PostgreSQL', 'Tailwindcss', 'NodeJs'],
-        img: '/sipekad/sipekad2.png'
+        img: '/sipekad/sipekad2.jpeg'
     },
     {
         name: 'SIPEG Pusdatin',
         description: 'Sentralisasi data HR untuk 200+ karyawan. Fitur mencakup manajemen cuti, absensi, dan penilaian kinerja.',
         tools: ['React', 'NodeJs', 'MonggoDB', 'Express'],
-        img: '/pusdatin/pusdatin1.jpeg'
+        img: '/pusdatin/pusdatin-1.jpeg'
     },
     {
         name: 'PP Nurul Hikmah Landing Page',
@@ -92,7 +92,7 @@ export const products = [
       "Secure Auth & Role Management",
       "API Integration (Payment, Shipping)",
     ],
-    img: "/product/product-2.jpg",
+    img: "/product/product-5.jpg",
     price: 2500000,
   },
   {
@@ -106,7 +106,7 @@ export const products = [
       "Performance Monitoring",
       "Priority Technical Support",
     ],
-    img: "/product/product-3.jpg",
+    img: "/product/product-4.jpg",
     price: 300000,
   },
 ];
