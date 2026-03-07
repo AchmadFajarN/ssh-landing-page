@@ -1,18 +1,28 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import { workProcess } from '@/lib/constant/constant'
+import { useRef, useLayoutEffect } from 'react'
+import { howWeWorkAnimate } from '@/lib/animation/HowWeWorkAnimation'
+
 const HowWeWork = () => {
+  const container = useRef(null);
+  useLayoutEffect(() => {
+    howWeWorkAnimate(container);
+  }, []);
   return (
-    <section className='p-section w-full pb-10'>
+    <section className='p-section w-full pb-10 mt-20 xl:my-40'>
         <div className="flex justify-center mt-8">
             <h1 className='font-raleway text-4xl font-bold uppercase flex gap-1'>Bagaimana Kita Bekerja <span className='font-poppins text-sm'>(3)</span></h1>
         </div>  
         <div className="flex flex-col xl:gap-20">
-            <div className='mt-4 w-full min-h-[100vh] grid grid-cols-1 md:grid-cols-2 gap-4 xl:order-2'>
+            <div ref={container} className='mt-4 w-full min-h-[100vh] grid grid-cols-1 md:grid-cols-2 gap-4 xl:order-2 pt-20'>
                 {
                     workProcess.map((w, i) => {
                         return(
-                        <div key={i} className={`${ i % 2 !== 0 ? 'bg-orange-300' : 'bg-black/80 text-white' } shadow-md h-160 rounded-[20px] p-8 flex flex-col text-black/90`}>
+                        <div style={{ clipPath: 'circle(0% at 50% 50%)' }} key={i} className={`${ i % 2 !== 0 ? 'bg-orange-300' : 'bg-black/80 text-white' } relative shadow-md h-160 rounded-[20px] p-8 flex flex-col text-black/90 container-mask`}>
+                            {/* <div style={{ clipPath: 'circle(70.7% at 50% 50%)' }} className="absolute inset-0 bg-white mask"></div> */}
                             <div className='flex justify-between flex-1'>
                                 <p className={`font-raleway text-6xl font-bold ${ i % 2 === 0 && 'order-2' }`}>{w.title}</p>
                                 <p className='text-2xl'>0{i + 1}</p>
@@ -76,9 +86,6 @@ const HowWeWork = () => {
                             <span>bisnis anda secara efektif.</span>
                        </span>
                     </p>
-                    <div className='mt-8 text-xl xl:flex justify-center'>
-                        <button className='px-6 py-2 bg-black/90 text-white  rounded-[20px]'>Lihat Produk</button>
-                    </div>
                 </div>
             </div>
         </div>         
