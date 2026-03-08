@@ -16,7 +16,7 @@ const HowWeWork = () => {
         <div className="flex justify-center mt-8">
             <h1 className='font-raleway text-4xl font-bold uppercase flex gap-1'>Bagaimana Kita Bekerja <span className='font-poppins text-sm'>(3)</span></h1>
         </div>  
-        <div className="flex flex-col xl:gap-20">
+        <div className="flex flex-col xl:gap-20 ">
             <div ref={container} className='mt-4 w-full min-h-[100vh] grid grid-cols-1 md:grid-cols-2 gap-4 xl:order-2 pt-20'>
                 {
                     workProcess.map((w, i) => {

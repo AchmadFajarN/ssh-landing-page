@@ -15,8 +15,8 @@ export const howWeWorkAnimate = (containerElement) => {
         },
         scrollTrigger: {
             trigger: containerElement.current,
-            start: 'top top',
-            end: '+=200',
+            start: 'top 50%',
+            end: '+=500',
         }
     })
 }
