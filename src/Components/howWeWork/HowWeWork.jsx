@@ -8,8 +8,10 @@ import { howWeWorkAnimate } from '@/lib/animation/HowWeWorkAnimation'
 
 const HowWeWork = () => {
   const container = useRef(null);
+  const section = useRef(null);
+  const textRef = useRef(null);
   useLayoutEffect(() => {
-    howWeWorkAnimate(container);
+    howWeWorkAnimate(container, section, textRef);
   }, []);
   return (
     <section className='p-section w-full pb-10 mt-20 xl:my-40'>
@@ -43,47 +45,55 @@ const HowWeWork = () => {
             </div>
             <div className='mt-8 text-2xl font-poppins xl:text-4xl'>
                 <div className=''>
-                    <p className='flex items-center gap-2 flex-wrap xl:justify-center'>
-                       <span className='flex gap-2'>
-                            <span>Kami memanfaatkan</span>
-                            <span className='block'>
-                                <span className='block relative  size-8 rounded-[8px]'>
-                                    <Image fill src={`/icons/nodedotjs.svg`} alt='tech' className='object-center object-cover' />
-                                </span> 
-                            </span>
-                            <span>teknologi modern </span>
-                       </span> 
-                       <span className='flex gap-2'>
-                            <span>terstruktur</span>
-                            <span className='block'>
-                                <span className='block relative  size-8 rounded-[8px]'>
-                                    <Image fill src={`/icons/css.svg`} alt='tech' className='object-center object-cover' />
-                                </span> 
-                            </span>
-                            <span>sebagai fondasi</span>
-                            <span>modern</span>
-                            <span className='block'>
-                                <span className='block relative  size-8 rounded-[8px]'>
-                                    <Image fill src={`/icons/nextdotjs.svg`} alt='tech' className='object-center object-cover' />
-                                </span> 
+                    <p ref={textRef} className='flex items-center gap-2 flex-wrap xl:justify-center'>
+                       <span className='overflow-hidden'>
+                            <span className='flex gap-2 animated-span'>
+                                    <span>Kami memanfaatkan</span>
+                                    <span className='block'>
+                                        <span className='block relative  size-8 rounded-[8px]'>
+                                            <Image fill src={`/icons/nodedotjs.svg`} alt='tech' className='object-center object-cover' />
+                                        </span> 
+                                    </span>
+                                    <span>teknologi modern </span>
+                            </span> 
+                       </span>
+                       <span className="overflow-hidden">
+                            <span className='flex gap-2 animated-span'>
+                                    <span>terstruktur</span>
+                                    <span className='block'>
+                                        <span className='block relative  size-8 rounded-[8px]'>
+                                            <Image fill src={`/icons/css.svg`} alt='tech' className='object-center object-cover' />
+                                        </span> 
+                                    </span>
+                                    <span>sebagai fondasi</span>
+                                    <span>modern</span>
+                                    <span className='block'>
+                                        <span className='block relative  size-8 rounded-[8px]'>
+                                            <Image fill src={`/icons/nextdotjs.svg`} alt='tech' className='object-center object-cover' />
+                                        </span> 
+                                    </span>
                             </span>
                        </span>
-                       <span className='flex gap-2'>
-                            <span>dalam mewujudkan</span>
-                            <span className='block p-2 bg-black/80 rounded-[8px]'>
-                                <span className='block relative  size-6 rounded-[8px]'>
-                                    <Image fill src={`/icons/react.svg`} alt='tech' className='object-center object-cover' />
-                                </span> 
+                       <span className='overflow-hidden'>
+                            <span className='flex gap-2 animated-span'>
+                                    <span>dalam mewujudkan</span>
+                                    <span className='block p-2 bg-black/80 rounded-[8px]'>
+                                        <span className='block relative  size-6 rounded-[8px]'>
+                                            <Image fill src={`/icons/react.svg`} alt='tech' className='object-center object-cover' />
+                                        </span> 
+                                    </span>
+                                    <span>kebutuhan dan tujuan</span>
                             </span>
-                            <span>kebutuhan dan tujuan</span>
                        </span>
-                       <span className='flex gap-2'>
-                            <span className='block p-2 bg-black/80 rounded-[8px]'>
-                                <span className='block relative  size-6 rounded-[8px]'>
-                                    <Image fill src={`/icons/tailwindcss.svg`} alt='tech' className='object-center object-cover' />
-                                </span> 
+                       <span className="overflow-hidden">
+                            <span className='flex gap-2 animated-span'>
+                                    <span className='block p-2 bg-black/80 rounded-[8px]'>
+                                        <span className='block relative  size-6 rounded-[8px]'>
+                                            <Image fill src={`/icons/tailwindcss.svg`} alt='tech' className='object-center object-cover' />
+                                        </span> 
+                                    </span>
+                                    <span>bisnis anda secara efektif.</span>
                             </span>
-                            <span>bisnis anda secara efektif.</span>
                        </span>
                     </p>
                 </div>
