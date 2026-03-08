@@ -21,12 +21,10 @@ export default function Home() {
     <Header />
     <main className="bg-white min-h-[100vh] w-full">
       <Hero /> 
-      <div>
-        <About />
+      <About />
         <SelectedWork />
         <HowWeWork />
-        <Product />
-      </div>    
+        <Product />    
     </main>
     <Footer />
     </>

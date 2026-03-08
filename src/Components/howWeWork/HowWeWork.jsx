@@ -33,7 +33,7 @@ const HowWeWork = () => {
                                 <div className={`relative overflow-hidden rounded-[12px] ${ i % 2 === 0 && 'order-2' }`}>
                                     <Image src={w.img} alt="step" fill className='object-center object-cover' />
                                 </div>
-                                <div className='font-poppins font-[500] text-2xl'>
+                                <div className='font-poppins font-[500] md:text-xl xl:text-2xl'>
                                     { w.description }
                                 </div>
                             </div>
@@ -45,7 +45,7 @@ const HowWeWork = () => {
             </div>
             <div className='mt-8 text-2xl font-poppins xl:text-4xl'>
                 <div className=''>
-                    <p ref={textRef} className='flex items-center gap-2 flex-wrap xl:justify-center'>
+                    <p ref={textRef} className='flex text-sm sm:text-xl xl:text-4xl items-center gap-2 flex-wrap xl:justify-center'>
                        <span className='overflow-hidden'>
                             <span className='flex gap-2 animated-span'>
                                     <span>Kami memanfaatkan</span>

@@ -25,7 +25,7 @@ const About = () => {
     <section ref={trigger} className='p-section my-20 xl:my-40 w-full min-h-[100vh] xl:h-[100vh] grid grid-cols-1 grid-rows-5 md:grid-cols-3 md:grid-rows-2 gap-4'>
         <div className='mb-2'>
             <h1 className='mt-8 text-4xl font-raleway uppercase font-bold flex gap-1'>Tentang Kami <span className='font-poppins text-sm'>(1)</span></h1>
-            <p ref={aboutText} className='mt-4 text-xl font-poppins'>
+            <p ref={aboutText} className='mt-4 text md:text-xl font-poppins'>
               Kami adalah tim yang berfokus pada pengembangan website berkualitas dengan pendekatan strategi dan desain yang tepat, untuk membantu brand Anda tampil profesional dan berkembang secara berkelanjutan.
             </p>
             <div className='flex items-center gap-4'>

@@ -19,7 +19,7 @@ const Product = () => {
             <div className="flex justify-center items-center">
                 <h1 className='text-4xl font-raleway uppercase font-[600] flex items-center gap-1'>Produk<span className="font-poppins text-sm">(4)</span></h1>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-4'>
+            <div className='grid grid-cols-1  xl:grid-cols-3 gap-8 xl:gap-4'>
                 {
                     products.map((p, i) => {
                         return(
@@ -31,14 +31,14 @@ const Product = () => {
                             <div className='mt-6 text-black/90 flex-2 flex flex-col animated-text-container'>
                                     <div className='flex justify-between gap-4'>
                                         {/* animated title: animated-title  */}
-                                        <p className='text-6xl md:text-4xl xl:text-3xl font-poppins animated-title font-[600]'>{ p.title }</p>
+                                        <p className='text-4xl md:text-4xl xl:text-3xl font-poppins animated-title font-[600]'>{ p.title }</p>
                                         <p className='font-bold text-2xl xl:text-lg'>0{i+1}</p>
                                     </div>
                                     <div className="text-xl font-poppins mt-4 flex flex-col flex-2 justify-between">
                                         <div className='flex-2 flex flex-col '>
                                             {/* animated description: animated-description */}
-                                            <p className='text-black/50 mb-4 animated-description'>{p.description}</p>
-                                            <ul className='flex bg-orange-300 p-8 rounded-[12px] flex-col items gap-2 text-2xl md:text-xl'>
+                                            <p className='text-black/50 text-sm md:text-xl mb-4 animated-description'>{p.description}</p>
+                                            <ul className='flex bg-orange-300 p-8 rounded-[12px] flex-col items gap-2 text-sm md:text-2xl md:text-xl'>
                                                 {/* animated list: animated-list */}
                                                 {
                                                     p.features.map((f, i) => <li key={i} className='flex gap-2 items-center animated-list'><span><CheckCircle /></span>{f}</li>)

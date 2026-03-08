@@ -47,14 +47,14 @@ const Hero = () => {
                      <Image fill src={'/image-hero.jpg'} alt="hero" className="object-center object-cover" />
                      <div ref={secondImage} className="absolute rounded-[20px] origin-top w-full h-full inset-0 bg-gray-200"></div>
                 </div>
-                <div className="flex justify-center items-center text-center font-poppins text-xl xl:text-start xl:text-2xl xl:items-start ">
+                <div className="flex justify-center items-center text-center font-poppins text-xs md:text-xl  xl:text-start xl:text-2xl xl:items-start ">
                     <p ref={textHeroFirst}>Ruang digital yang terarah, dibangun dengan presisi dan tujuan yang jelas.</p>
                 </div>
                 <div className='row-span-2 bg-gray-800 rounded-[20px] overflow-hidden relative'>
                       <Image fill src={'/image-hero-3.jpg'} alt="hero" className="object-center object-cover grayscale-100 brightness-80  hover:grayscale-0 transition-all duration-200 ease-in-out" />
                       <div ref={thridImage} className="absolute rounded-[20px] origin-top w-full h-full inset-0 bg-gray-200"></div>
                 </div>
-                <div className='flex text-center justify-center items-center row-span-1 text-xl xl:text-start xl:text-2xl xl:items-start font-poppins'>
+                <div className='flex text-center justify-center items-center row-span-1 text-xs md:text-xl xl:text-start xl:text-2xl xl:items-start font-poppins'>
                     <p ref={textHeroSecond}>
                         Hadir sebagai langkah strategis untuk membuka peluang dan menggerakkan pertumbuhan.
                     </p>

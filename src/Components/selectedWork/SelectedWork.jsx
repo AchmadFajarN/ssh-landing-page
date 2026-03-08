@@ -18,7 +18,7 @@ const SelectedWork = () => {
         <div className='w-full min-h-[100vh] bg-black/90  text-white pt-20 pb-10'>
             <div className='font-poppins  grid grid-cols-3'>
                 <div></div>
-                <h1 ref={descriptionRef} className='col-span-2 text-xl xl:text-2xl pr-8'>Setiap karya merepresentasikan pendekatan yang terstruktur dan berorientasi pada efektivitas. Kami berfokus pada solusi yang relevan, fungsional, dan memberikan nilai nyata.</h1>
+                <h1 ref={descriptionRef} className='col-span-2 md:text-xl xl:text-2xl pr-8'>Setiap karya merepresentasikan pendekatan yang terstruktur dan berorientasi pada efektivitas. Kami berfokus pada solusi yang relevan, fungsional, dan memberikan nilai nyata.</h1>
             </div>
             <div className='mt-14'>
                 <h2 ref={titleRef} className='px-4 md:px-8 xl:px-20 font-raleway text-4xl mb-8 font-bold uppercase flex gap-1'>Proyek Pilihan <span className='font-poppins text-sm'>(2)</span></h2>
@@ -29,8 +29,8 @@ const SelectedWork = () => {
                                 <div ref={(el) => list.current[i] = el} key={i} className={`grid grid-cols-3 px-4 md:px-8 xl:px-20 ${ i === selectedWork.length - 1 ? 'border-y' : 'border-t' } py-20`}>
                                     <div className='font-poppins overflow-hidden flex items-center'>
                                         {/* title: anim-title */}
-                                        <p className="anim-title flex gap-2 px-4">
-                                            0{i + 1}<span className='text-2xl font-raleway font-semibold'>{ p.name }</span>
+                                        <p className="anim-title flex gap-2 px-4 text-xs">
+                                            0{i + 1}<span className='ml-1 text-xl md:text-2xl font-raleway font-semibold'>{ p.name }</span>
                                         </p>
                                     </div>
                                     <div className='col-span-2 pr-4 md:grid md:grid-cols-2 md:gap-4 xl:grid-cols-3'>
