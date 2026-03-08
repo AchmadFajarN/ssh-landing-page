@@ -16,7 +16,7 @@ const HowWeWork = () => {
   return (
     <section className='p-section w-full pb-10 mt-20 xl:my-40'>
         <div className="flex justify-center mt-8">
-            <h1 className='font-raleway text-4xl font-bold uppercase flex gap-1'>Bagaimana Kita Bekerja <span className='font-poppins text-sm'>(3)</span></h1>
+            <h1 className='font-raleway text-2xl md:text-4xl font-bold uppercase flex gap-1'>Bagaimana Kita Bekerja <span className='font-poppins text-sm'>(3)</span></h1>
         </div>  
         <div className="flex flex-col xl:gap-20 ">
             <div ref={container} className='mt-4 w-full min-h-[100vh] grid grid-cols-1 md:grid-cols-2 gap-4 xl:order-2 pt-20'>
@@ -31,7 +31,7 @@ const HowWeWork = () => {
                             </div>
                             <div className="grid grid-cols-2 flex-2 gap-4">
                                 <div className={`relative overflow-hidden rounded-[12px] ${ i % 2 === 0 && 'order-2' }`}>
-                                    <Image src={w.img} alt="step" fill className='object-center object-cover' />
+                                    <Image src={w.img} alt="step" fill className={`object-center object-cover ${ i === 0 ? 'object-right' : 'object-center' }`} />
                                 </div>
                                 <div className='font-poppins font-[500] md:text-xl xl:text-2xl'>
                                     { w.description }
