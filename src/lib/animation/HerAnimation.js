@@ -33,6 +33,7 @@ export const animateTextHeroSection = (text, img) => {
 
     const animateFirstText = gsap.to(firstSplitText.chars, {
         y: 0,
+        delay: 1,
         stagger: {
             amount: 0.2
         },
@@ -41,6 +42,7 @@ export const animateTextHeroSection = (text, img) => {
 
      const animatedSecondText = gsap.to(secondSplitText.chars, {
         y: 0,
+        delay: 1,
         stagger: {
             amount: 0.2
         },
@@ -49,6 +51,7 @@ export const animateTextHeroSection = (text, img) => {
 
     const animateHeadingText = gsap.to(headingSplitText.lines, {
         y: 0,
+        delay: 1,
         stagger: {
             amount: 0.2
         },
@@ -57,6 +60,7 @@ export const animateTextHeroSection = (text, img) => {
 
     gsap.to([firstImage.current, secondImage.current, thridImage.current], {
         scaleY: 0,
+        delay: 1,
         duration: 1,
         stagger: {
             amount: 0.2
