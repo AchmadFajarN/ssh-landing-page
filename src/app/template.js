@@ -22,8 +22,8 @@ export default function Template({ children }) {
             <div id="banner-4" className=" bg-white rounded-[20px] border-orange-300 bg-white border"></div>
         </div> */}
 
-        <div id="background" className="h-screen bg-[#131313] fixed  inset-0 w-[135vw] md:w-[120vw] xl:w-[100vw] z-80"></div>
-        <div id="background2" className="h-screen bg-orange-300 fixed inset-0 w-screen z-[999]"></div>
+        <div id="background" className="h-[140vh] bg-[#131313] fixed  inset-0 w-[135vw] md:w-[120vw] xl:w-[100vw] z-80"></div>
+        <div id="background2" className="h-[140vh] bg-orange-300 fixed inset-0 w-[135vw] md:w-[120vw] xl:[100vw] z-[999]"></div>
         {
             children
         }
