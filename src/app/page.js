@@ -1,13 +1,12 @@
 'use client'
-import Header from "@/Components/Header";
 import Hero from "@/Components/hero/Hero";
 import About from "@/Components/about/About";
 import SelectedWork from "@/Components/selectedWork/SelectedWork";
 import HowWeWork from "@/Components/howWeWork/HowWeWork";
 import Product from "@/Components/product/Product";
-import Contact from "@/Components/contact/Contact";
 import Footer from "@/Components/Footer";
 import { useEffect } from "react";
+import ListWork from "@/Components/ListWork/ListWork";
 export default function Home() {
   useEffect(() => {
     (async () => {
@@ -18,11 +17,11 @@ export default function Home() {
   }, []);
   return (
     <>
-    <Header />
     <main className="bg-white min-h-[100vh] w-full">
       <Hero /> 
       <About />
-        <SelectedWork />
+        {/* <SelectedWork /> */}
+        <ListWork />
         <HowWeWork />
         <Product />    
     </main>

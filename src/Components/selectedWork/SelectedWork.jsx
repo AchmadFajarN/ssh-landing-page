@@ -33,7 +33,7 @@ const SelectedWork = () => {
                                             0{i + 1}<span className='ml-1 text-xl md:text-2xl font-raleway font-semibold'>{ p.name }</span>
                                         </p>
                                     </div>
-                                    <div className='col-span-2 pr-4 md:grid md:grid-cols-2 md:gap-4 xl:grid-cols-3'>
+                                    <div className='col-span-2 pr-4 md:grid md:grid-cols-2 md:gap-4 xl:grid-cols-2'>
                                         <div className='flex gap-4 self-start xl:self-center flex-wrap'>
                                             {/* tools: anim-tool */}
                                             {
@@ -41,10 +41,10 @@ const SelectedWork = () => {
                                             }
                                         </div>
                                         {/* description: anim-desc */}
-                                        <p className='self-start anim-desc xl:self-center hidden md:block xl:text-xl'>{ p.description }</p>
-                                        <div className='hidden xl:block h-60 relative rounded-[12px] overflow-hidden'>
+                                        <p className='anim-desc hidden md:block xl:text-xl'>{ p.description }</p>
+                                        {/* <div className='hidden xl:block h-60 relative rounded-[12px] overflow-hidden'>
                                             <Image fill alt={p.name} src={p.img} className='object-cover object-center' />
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             )

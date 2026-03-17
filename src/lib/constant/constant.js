@@ -2,26 +2,26 @@ export const selectedWork = [
     {
         name: 'Sipekad STTPU',
         description: 'Sistem informasi akademik yang mengurangi beban admin hingga 60%. Integrasi data mahasiswa, dosen, dan nilai dalam satu platform terpusat.',
-        tools: ['expressJs', 'reactJs', 'PostgreSQL', 'Tailwindcss', 'NodeJs'],
-        img: '/sipekad/sipekad2.jpeg'
+        tags: ['expressJs', 'reactJs', 'PostgreSQL', 'Tailwindcss', 'NodeJs'],
+        imageUrl: '/sipekad/sipekad2.jpeg'
     },
     {
         name: 'SIPEG Pusdatin',
         description: 'Sentralisasi data HR untuk 200+ karyawan. Fitur mencakup manajemen cuti, absensi, dan penilaian kinerja.',
-        tools: ['React', 'NodeJs', 'MonggoDB', 'Express'],
-        img: '/pusdatin/pusdatin-1.jpeg'
+        tags: ['React', 'NodeJs', 'MonggoDB', 'Express'],
+        imageUrl: '/pusdatin/pusdatin-1.jpeg'
     },
     {
         name: 'PP Nurul Hikmah Landing Page',
         description: 'Mengembangkan website landing page Pesantren Nurul Hikmah dengan tata letak terstruktur, informasi yang jelas, serta desain modern dan responsif.',
-        tools: ['React', 'Framer', 'Tailwindcss'],
-        img: '/ppnh/ppnh1.webp'
+        tags: ['React', 'Framer', 'Tailwindcss'],
+        imageUrl: '/ppnh/ppnh1.webp'
     },
     {
         name: 'X Landing Page',
         description: 'Mengembangkan website landing page Pesantren Nurul Hikmah dengan tata letak terstruktur, informasi yang jelas, serta desain modern dan responsif.',
-        tools: ['React', 'Framer', 'Tailwindcss', 'gsap'],
-        img: '/ppnh/x-landing-page.png'
+        tags: ['React', 'Framer', 'Tailwindcss', 'gsap'],
+        imageUrl: '/ppnh/x-landing-page.png'
     }
 ]
 

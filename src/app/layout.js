@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Poppins, Raleway } from "next/font/google";
-
+import Header from "@/Components/Header";
 export const metadata = {
   title: {
     default: 'Surupan Software House | Partner Digital Startup & UMKM',
@@ -50,6 +50,7 @@ export default function RootLayout({ children }) {
         cz-shortcut-listen="true"
         className={`${poppins.variable} ${raleway.variable} overflo antialiased w-[135vw] md:w-[120vw] xl:w-[100vw] overflow-x-hidden`}
       >
+        <Header />
         {children}
       </body>
     </html>

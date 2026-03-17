@@ -1,6 +1,25 @@
-import { useEffect, useRef, useState } from "react";
+'use client'
 
+import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 export default function Header() {
+  const links = [
+    {
+      name: 'home',
+      path: '/'
+    },
+    {
+      name: 'portfolio',
+      path: '/portfolio'
+    },
+    {
+      name: 'blog',
+      path: '/blog'
+    }
+  ];
+
+  const pathname = usePathname();
   const [hide, setHide] = useState(false);
   const scrollTimeout = useRef(null);
   const lastScroll = useRef(0);
@@ -33,9 +52,15 @@ export default function Header() {
             <h1 className="font-bold px-4 xl:text-2xl font-raleway rounded-[12px] text-black/80">SSH</h1>
             <nav>
               <ul className="flex items-center gap-2 text-xs md:text-[16px] xl:gap-4 text-black/80">
-                <li className="bg-black/80 text-white px-4 py-2 rounded-[12px]">Home</li>
-                <li className=" px-4 py-2 rounded-[12px]">Portfolio</li>
-                <li className=" px-4 py-2 rounded-[12px]">Blog</li>
+              {
+                links.map((l, i) => {
+                  return(
+                    <li key={i}>
+                      <Link className={`${ pathname === l.path && 'bg-black/80 text-white' } hover:bg-black/80 hover:text-white transition-color duration-200 ease-in-out px-4 py-2 rounded-[12px]`} href={l.path} >{ l.name }</Link>
+                    </li>
+                  )
+                })
+              }
                 <li className="px-4 py-2 rounded-[12px] bg-orange-300 text-black/80">Buat Projek</li>
               </ul>
             </nav>
