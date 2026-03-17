@@ -145,7 +145,7 @@ function ProjectGallery() {
   };
 
   return (
-    <section className="relative min-h-screen bg-black/90 text-white font-poppins">
+    <section className="relative min-h-screen bg-black/90 w-full text-white font-poppins">
       <div className="mb-8 flex justify-between p-section gap-16">
         <h1 className="text-4xl flex-1 font-raleway uppercase font-semibold flex gap-1">
           Selected Work <span className="font-poppins text-sm">(2)</span>
@@ -232,11 +232,11 @@ function ProjectRow({
       style={{ opacity: isInactive ? 0.3 : 1 }}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}>
-        <h2 className="text-xl flex gap-1 flex-1">
+        <h2 className="md:text-xl flex gap-1 flex-1">
             <span className="text-sm">({ index + 1 })</span>
             {project.name}
         </h2>
-        <div className="flex gap-2 flex-2 justify-center">
+        <div className="gap-2 flex-2 justify-center hidden md:flex">
             {
                 project.tags.map((tool, i) => <div className="px-4 py-2 bg-orange-300 text-black/90 rounded-[20px]" key={i}>{tool}</div>)
             }

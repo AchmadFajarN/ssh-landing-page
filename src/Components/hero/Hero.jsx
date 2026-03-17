@@ -29,7 +29,7 @@ const Hero = () => {
   }, []);
   
   return (
-    <section className='p-section min-h-[100vh] xl:h-[100vh]'>
+    <section className='p-section h-[120vh] xl:h-[100vh]'>
         <div className='h-full mt-4 pt-8 flex flex-col'>
             <div className=' text-center font-raleway font-bold flex flex-col items-center gap-4'>
                 <p className='font-normal text-sm uppercase px-4 py-2 rounded-[12px] xl:text-[1rem] bg-orange-300 text-black/90'>jasa pembuatan website</p>
@@ -55,7 +55,7 @@ const Hero = () => {
                       <Image fill src={'/image-hero-3.jpg'} alt="hero" className="object-center object-cover grayscale-100 brightness-80  hover:grayscale-0 transition-all duration-200 ease-in-out" />
                       <div ref={thridImage} className="absolute rounded-[20px] origin-top w-full h-full inset-0 bg-gray-200"></div>
                 </div>
-                <div className='flex text-center justify-center items-center row-span-1 text-xs md:text-xl xl:text-2xl xl:items-start xl:justify-start font-poppins'>
+                <div className='flex justify-center items-center text-center font-poppins text-xs md:text-xl xl:text-start xl:text-2xl xl:items-start'>
                     <p ref={textHeroSecond}>
                         Hadir sebagai langkah strategis untuk membuka peluang dan menggerakkan pertumbuhan.
                     </p>
